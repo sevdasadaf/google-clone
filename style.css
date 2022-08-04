@@ -1,0 +1,195 @@
+:root {
+
+--google-nav-btn:#2b7de9;
+
+}
+
+
+* {
+    margin: 0;
+    text-decoration: none; 
+    box-sizing: border-box;
+    font-family: Arial,  sans-serif;
+
+}
+
+
+.menu-svg, 
+.s-icon,
+.vs-icon
+{
+    width: 24px;
+    height: 24px;
+}
+
+body {
+    height: 100vh;
+     display: flex;
+     flex-direction: column;   
+
+}
+
+/* .menu-svg {
+    opacity: 1;
+} */
+
+
+.container {
+
+     height: 100%;
+     display: flex;
+    flex-direction: column;    
+     /* main axis */
+    justify-content: space-between;
+       
+    
+}
+
+
+nav {
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 10px;
+    
+}
+ 
+
+nav a {
+
+    padding: 7px ;
+    color: #000;
+
+}
+ nav a:hover {
+    text-decoration: underline;
+ }
+
+ nav > button {
+     background: var(--google-nav-btn);
+     color: #fff;
+     padding: 9px 23px;
+     border: 1px solid transparent;
+     border-radius: 4px;
+     cursor: pointer;
+     
+ }
+
+ section {
+
+     display: flex;
+     flex-direction:column;
+     align-items: center;
+     gap: 10px;
+     
+
+ }
+
+.search-div {
+    /* min-width: 480px; */
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+   
+    
+  
+
+}
+
+.search-div input {
+    width: 100%;
+    padding: 13px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 25px;
+    border: 1px solid #dedede;
+
+
+
+}
+
+.s-icon {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    opacity: .5; 
+}
+
+.vs-icon {
+    position: absolute;
+    top: 13%;
+    right: 3%;
+
+}
+
+.s-buttons {
+    
+    align-self: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+ /* descendant selector */
+.s-buttons button {
+
+    padding: 11px 12px;
+    border: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+.s-buttons button:hover {
+    box-shadow: 0 .7px  .7px rgba(203,205,206);
+    border: 1px solid #dedede ;
+
+
+}
+
+footer {
+    background-color: #f2f2f2;
+    
+    
+}
+
+.top {
+    border-bottom: 1px solid #dadce0;
+    color: #70757a ;
+    font-size: 15px;
+    padding: 15px 20px;
+
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px ;
+    
+
+}
+
+.left-side a {
+    
+    padding: 10px;
+    color:  #70757a ;
+}
+
+.right-side a {
+    padding: 10px;
+    color:  #70757a ;
+}
+
+.left-side a:hover {
+    text-decoration: underline;
+
+}
+
+
+.right-side a:hover {
+    text-decoration: underline;
+}
+
